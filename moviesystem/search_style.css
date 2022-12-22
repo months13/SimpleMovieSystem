@@ -1,0 +1,161 @@
+.title-text {
+    font-size:30px;
+    font-weight:bold;    
+    text-align: center;
+    /* margin-bottom:100px; */
+    margin-top:50px;
+    color:MediumSeaGreen;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:100px;
+}
+
+.search-input {
+    margin-bottom:30px;
+    width:60%;    
+    display:block;
+}
+
+.search {
+    /* border:1px solid black; */
+    margin-left:100px;
+    margin-right:100px;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+.search-input {
+    margin-left:150px;
+    margin-right:150px;
+}
+
+.search-button {
+    margin-left:150px;
+    margin-right:150px;
+}
+
+.login-form {
+    display:none;
+    position:absolute;
+    border:1px solid black;
+    top: 20%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    background-color: darkturquoise;    
+
+    box-shadow: 1px 1px 1px 1px gray;
+    width:300px;    
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.table {
+    margin-left:20px;
+}
+
+.buttons {
+    margin-top:10px;
+    margin-left:100px;
+}
+
+.submit-button {
+    margin-right:30px;
+}
+
+.search-result {    
+    margin-top:80px;
+    display:flex;
+    justify-content: center;
+}
+
+.result-table {
+    /* display:none; */
+    width:80%;
+}
+
+.result-table, .result-row, .result-data .result-data3 {
+    border:1px solid gainsboro;
+    border-collapse: collapse;
+}
+
+.result-data3 {
+    background-color: blueviolet;
+}
+
+th {
+    height:40px;
+    color:white;
+    background-color: limegreen;
+}
+
+.result-row>td {
+    text-align: center;
+    border:1px solid gainsboro;
+    height:30px;
+}
+
+.theater-search {
+    display:none;
+    margin-top:30px;
+    margin-left:63px;
+}
+
+.make-reservation {
+    display:none;
+    background-color: lightblue;
+
+    position:absolute;
+    border:1px solid gray;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;    
+
+    box-shadow: 1px 1px 1px 1px gray;
+    width:500px;    
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+
+.result-table2 {
+    margin:0 auto;
+    margin-top:20px;
+}
+
+.reservation-input {
+    margin-top:30px;
+    margin-left:40px;
+}
+
+.button-set {
+    margin-top:10px;
+    margin-left:40px;
+}
+
+.reservation-number {
+    margin-left:10px;
+}
+
+.id-display2 {
+    color:blue;
+    font-weight: bold;
+}
+
+.form-b {
+    display:none;
+}
+
+.cancel-button {
+    margin-left:120px;
+    margin-top:50px;
+    margin-bottom:100px;
+}

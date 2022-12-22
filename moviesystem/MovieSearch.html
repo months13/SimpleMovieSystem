@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="search_script.js?ver=6"></script>
+    <link rel="stylesheet" href="search_style.css?ver=7">
+</head>
+<body>
+    
+    <div class="header">
+        <span></span>
+        <span class="title-text">영화 검색하기</span>
+        <span class="login-section">
+            <span class="id-display"></span>
+            <button type="button" class="login-button">로그인</button>                            
+            <a href="#" class="reservation-info">예약정보</a>
+
+            <form class="form-b" action="search_php6.php" method="post" target="_blank">
+                <input type="hidden" name="id" class="hidden-input" value="iddisplay">                
+            </form>
+
+        </span>
+    </div>    
+
+    <div class="search">        
+        <input type="text" name="search-input" class="search-input">                                        
+        <button class="search-button">영화 검색</button>
+    </div>
+
+    <div class="search-button">        
+    </div>
+
+    <div class="search-result">
+        <table class="result-table">
+            <!-- <tr class="result-row">
+                <th class="result-data">선택</th>
+                <th class="result-data">영화 제목</th>
+                <th class="result-data">장르</th>
+                <th class="result-data">감독</th>
+                <th class="result-data">배우</th>
+                <th class="result-data">화일</th>
+            </tr>
+
+            <tr class="result-row">
+                <td><input type="radio" name="select2"></td>
+                <td>정준모의영화</td>
+                <td>drama</td>
+                <td>정준모</td>
+                <td>정준모1, 정준모2, 정준모3</td>
+                <td>미리보셈</td>
+            </tr>
+            <tr class="result-row">
+                <td><input type="radio" name="select2"></td>
+                <td>정준모의영화</td>
+                <td>drama</td>
+                <td>정준모</td>
+                <td>정준모1, 정준모2, 정준모3</td>
+                <td>미리보셈</td>
+            </tr> -->
+        </table>        
+    </div>
+    
+    <div class="theater-search2">
+        <button class="theater-search">상영관 검색하기</button>
+    </div>
+
+
+
+   
+    <div class="login-form">
+        <table class="table">
+            <tr>
+                <td>id</td>
+                <td>
+                    <input type="text" name="id-input" class="id-input" value="">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>password</td>
+                <td>
+                    <input type="password" name="password-input" class="password-input" value="">
+                </td>            
+            </tr>            
+        </table> 
+
+        <div class="buttons">
+            <button class="submit-button">Submit</button>
+            <button class="sign-button">SignIn</button>
+        </div>        
+        
+    </div>
+
+    <div class="make-reservation">
+        <table class="result-table result-table2">
+            <!-- <tr class="result-row">
+                <th class="result-data">선택</th>
+                <th class="result-data">상영 날짜</th>
+                <th class="result-data">상영관</th>
+                <th class="result-data">예약수</th>                                                
+            </tr>
+
+            <tr class="result-row">
+                <td><input type="radio" name="select"></td>
+                <td>2022-12-12</td>
+                <td>상영관1</td>
+                <td>0</td>                                
+            </tr>
+            <tr class="result-row">
+                <td><input type="radio" name="select"></td>
+                <td>2022-12-13</td>
+                <td>상영관2</td>
+                <td>0</td>    -->
+        </table>  
+        
+        <div class="reservation-input">
+            <span>예약 할 인원 : </span>
+            <input type="text" name="reservation-number" class="reservation-number">
+        </div>
+
+        <div class="button-set">
+            <button class="reservation-button">예약</button>
+            <button class="cancel-button">닫기</button>
+        </div>
+    </div>
+    
+
+</body>
+</html>

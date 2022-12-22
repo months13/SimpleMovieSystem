@@ -1,0 +1,54 @@
+.title-text {
+    font-size:30px;
+    font-weight:bold;    
+    text-align: center;
+    margin-bottom:100px;
+    color:MediumSeaGreen;
+}
+
+span {
+    font-weight: bold;
+}
+
+div {
+    margin-top:15px;
+}
+
+input {
+    margin-right:5px;
+}
+
+tr, td {
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    /* border:1px solid black; */
+}
+
+
+
+table{
+    /* border:1px solid black; */
+    width:80%;   
+    table-layout: fixed; 
+}
+
+.movie-title {
+    width:100%;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+}
+
+.td1 {
+    width:20%;
+}
+
+.result-text {
+    border:1px solid black;
+    margin:0;
+    padding:3px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="save_script.js?ver=2"></script>
+    <link rel="stylesheet" href="save_style.css">
+</head>
+
+<body>
+
+
+    <p class="title-text">영화 저장 페이지</p>
+
+    <form action="save_php2.php" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td class="td1"><span>영화 제목</span></td>
+                <td><input type="text" name="title" class="movie-title"></td>
+            </tr>
+
+            <tr>
+                <td class="td1"><span>장르</span></td>
+                <td><select name="genre">
+                        <option value="drama">드라마</option>
+                        <option value="action">액션</option>
+                        <option value="comedy">코미디</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td class="td1"><span>감독</span></td>
+                <td><input type="text" name="director"></td>
+            </tr>
+
+            <tr>
+                <td class="td1"><span>출연자</span></td>
+                <td>
+                    <span class="actor-list">
+                        <input type="text" name="actor1" class="actor1">
+                    </span>
+
+                    <button class="add-actor" type="button">출연자 추가</button>
+                    <button class="remove-actor" type="button">출연자 삭제</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1"><span>상영 날짜</span></td>
+                <td>
+                    <input type="date" name="date" class="display-date">                    
+                    <button type="button" class="search-theater">상영관 검색</button>
+                    <button type="button" disabled class="add-button">상영 정보 추가</button>                                        
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1"><span>상영 장소</span></td>
+                <td>
+                    <input type="radio" name='locate' value="상영관1" id="theater1" class="theater1" disabled>
+                    <label for="theater1">상영관1</label>
+                    <input type="radio" name='locate' value="상영관2" id="theater2" class="theater2" disabled>
+                    <label for="theater2">상영관2</label>
+                    <input type="radio" name='locate' value="상영관3" id="theater3" class="theater3" disabled>
+                    <label for="theater3">상영관3</label>                      
+                </td>
+            </tr>
+
+            <tr hidden class="display-result">
+                <td class="td1"></td>
+                <td>
+                    <div class="result-set">
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <span>포스터 화일</span>
+                </td>
+                <td>
+                    <input type="file" name="poster">
+                </td>
+            </tr>
+
+            <input type="hidden" class="screen-info" name="screen-info"> 
+
+            <tr>
+                <td class="td1">
+                    <input type="submit" value="저장하기">
+                </td>
+                <td>
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
